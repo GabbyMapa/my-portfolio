@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose-soft: #f5d5e0;
+  --color-rose-medium: #e8b4c8;
+  --color-rose-dark: #d4949f;
+  --color-cream: #faf7f5;
+  --color-clay: #b89b9b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
